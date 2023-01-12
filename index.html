@@ -1,0 +1,27 @@
+<style>    
+button {background:linear-gradient(white,black); color:white}
+marquee {color:white}
+p {color:white}
+</style>
+
+<title>MCP21 home</title>
+<body style="background:linear-gradient(rgb(0, 102, 255),rgb(0, 0, 0))"><center>
+    <div style="height:10%;"><h1>MCP-<span style="color:aqua">21</span></h1></div>
+    <div style="background:linear-gradient(beige,rgb(0, 0, 0));"><p>Welcome the the MCP you are GROUP <hr> <span style="font-size: 20cm; color:black">21</span></p></div>
+    <br>
+    <hr>
+    <div style="height:20%;"></div>
+
+<marquee behavior="alternate" id="acces">V PRESS V
+</marquee>
+<br>
+<script>const randy = Math.floor(Math.random()*9999)</script>
+ <button onclick="document.getElementById('acces').innerHTML = 'ID '+randy">PRESS FOR CODE</button>
+<button onclick="document.getElementById('acces').innerHTML = 'HIDDEN'">PRESS TO HIDE</button>
+<br>
+
+
+<input id="Hi">
+<button onclick="const iid = document.getElementById('Hi').value; if(iid==randy){document.getElementById('test').innerHTML='welcome'};">Press to confirm</button>
+<p id="test">waiting</p>
+</center></body>
